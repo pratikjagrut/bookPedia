@@ -5,7 +5,8 @@ This is a sample go application demonstrating postgres database and rest api ser
 
 ### Prerequisites
 - [go](https://golang.org/dl/) version v1.10+
-- go get gopkg.in/src-d/go-git.v4
+- go get github.com/go-pg/pg
+- go get github.com/gorilla/mux
 
 ### Steps to run
 
@@ -27,7 +28,8 @@ $ go run main.go
 ```
 Note: I'm using `httpie` but you can use `curl` or any other clinet you wish.
 
-Output:
+#### Output:
+
 Insert a book:
 ```
 $ http POST localhost:8080/book/add < books.json
